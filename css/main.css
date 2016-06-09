@@ -1,0 +1,142 @@
+/*Inicio*/
+
+ header{
+   background: #009688;
+   height: 150px;
+     }
+ body{
+  background: #ddd;
+ }
+ .cajaa{
+   border: solid 1px #bbb;
+   position: absolute;
+   left: 15%;
+   top: 40px;
+   width: 70%;
+   height: 600px;
+   background: #fff;
+ }
+ .columna{
+   width: 40%;
+   height: 100%;
+  border-right: solid 1px #bbb;
+ }
+ .bloque{
+  width: 60%;
+   height: 100%;
+   box-sizing: border-box;
+   margin:0px;
+  position: relative;
+  float: right;
+  margin-bottom: 500px;
+ }
+ .izquierdo{
+ float: right;
+ }
+.inicio{
+   background:#eee;
+  width: 100%;
+  height: 50px;
+   border-bottom: solid 1px #bbb;
+ }
+ .in-line{
+   display: inline-block;
+ }
+ .line{
+    width: 80% !important;
+    display: inline !important;
+ }
+ .buscar{
+   width: 100%;
+   height: 50px;
+  border-bottom: solid 1px #bbb;
+  padding: 7px;
+ }
+ .chat{
+   background:url(../image/chat-panel-bg.png);
+   width: 100%;
+   height:500px;
+    border-bottom: solid 1px #bbb;
+   }
+ .contactos{
+    overflow-y: scroll;
+   width: 100%;
+   height:500px;
+ }
+ .circulo{
+  margin-top: -10px; 
+  border-radius: 100%;
+  width: 40px;
+  height:40px;
+ }
+.linea{
+  border-radius: 100%;
+  width:35px;
+  height: 35px;
+  margin:8px;
+ }
+ .lista{
+   height: 75px;
+   padding: 10px;
+   border-bottom: solid 1px #bbb;
+   width: 100%
+ }
+ .name{
+   margin: -8px 5px;
+   width: 80%;
+ }
+ .iconos{
+  float: right;
+   margin-top: 15px;
+   display: inline;
+ }
+ .escribir{
+   background: #ddd;
+   padding: 10px;
+ }
+ #mensaje{
+   width: 90%;
+ }
+.mesenger{
+   width: 300px;
+   height: auto;
+   background: #fff;
+   padding: 5px;
+   border-radius: 5px;
+   margin: 3px;
+   position: relative;
+ }
+ .mensaje-e{
+   width: auto;
+   height: auto;
+   background: #c6ffb3;
+   padding: 5px;
+   border-radius: 5px;
+   margin: 3px;
+   margin-left: 280px;
+   position: relative;
+ }
+ .op-j{
+  width: 100%;
+   height: 500px;
+   background: rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   padding-top: 70px;
+   overflow-y: scroll;
+ }
+.hora{
+   float: right;
+   margin-top: 10px;
+ }
+ .andrea{
+  color: #1ad1ff;
+ }
+ .mariana{
+   color: #ff1a8c;
+ }
+ .paula{
+   color: #33ffad;
+ }
+ .aldo{
+   color: #ffcc00;
+}
