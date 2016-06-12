@@ -1,178 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  	<meta charset="utf-8">
-	  	<title>Whatsapp Web</title>
-	  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <meta charset="utf-8">
+	 	<title>Whatsapp Web</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/	font-awesome.min.css">
 		<link href="css/scrolling-nav.css" rel="stylesheet">
 <!-- Para efectos wow -->
-  		<link rel="stylesheet" href="css/animate.min.css" type="text/css">  
-
-	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	  	<link rel="shortcut icon" href="image/favicon.png" type="image/png">
-	  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
-	  	<link rel="stylesheet" href="css/main.css">
-	  	<link rel="stylesheet"  href="css/icomoon.css">
-	  	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.css">
+  	<link rel="stylesheet" href="css/animate.min.css" type="text/css">  
+		<link rel="shortcut icon" href="image/favicon.png" type="image/png">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
+		<link rel="stylesheet"  href="css/icomoon.css">
+	  	<script src="js/funcionesChat.js"></script>
 	</head>
-		<body>
+	<body>
 			<header>
 			
 			</header>
-	 				<div class="cajaa">
-	 					<div class="columna in-line">
-	 						<div class="inicio">
-	 							<img  class="img-circle linea" src="image/gian.jpg">
-								<div class="lineal iconos">
-									<p class="icon-message lineal in-line"></p>
-	 								<p class="icon-dots-three-vertical lineal in-line"></p>
-	 							</div>
+	 			<div class="cajaa">
+	 				<div class="columna in-line">
+	 					<div class="inicio">
+	 						<img  class="img-circle linea" src="image/naibit07.jpg">
+							<div class="lineal iconos">
+								<p class="icon-message lineal in-line"></p>
+	 							<p class="icon-dots-three-vertical lineal in-line"></p>
 	 						</div>
-						<div class="buscar">
-	 						<input placeholder="&#9906; Buscar o empezar un chat nuevo" class="form-control"></input>
+	 					</div>
+						<div class="buscar pane-subheader pane-list-subheader subheader-search">	
+							<input placeholder="&#9906; Buscar o empezar un chat nuevo" class="form-control"></input>
 	 					</div>
 						<div class="contactos">
-							<div class="lista">
+							<div class="lista" id="lista_1">
 	 							<img  class="img-circle linea" src="image/logocodeacademy.png">
 	 							<div class="name in-line">
-	 					    		<h5>Laboratoria Peru</h5>
-	 					    		<h6>Aldo:Dale dale!<span class="hora">14:25</span></h6>
-	 					    	</div>
+	 					    	<h5>Laboratoria Peru</h5>
+	 					    	<h6>Aldo:Dale dale!<span class="hora">14:25</span></h6>
 	 					   	</div>
-							<div class="lista">
-						    	<img class="img-circle linea" src="image/raymi.jpg">
-						   		<div class="name in-line">
+	 					  </div>
+							<div class="lista" id="lista_2" >
+						    <img class="img-circle linea" src="image/raymi.jpg">
+						   	<div class="name in-line">
 									<h5>Raymi Saldomando</h5>
 									<h6>La clase va bien!<span class="hora">11:20</span></h6>
 								</div>
-				       		</div>
-				        	<div class="lista">
-				        		<img class="img-circle linea" src="image/mariana.jpg">
-					        	<div class="name in-line">
+				   		</div>
+			      	<div class="lista" id="lista_3"  >
+		        		<img class="img-circle linea" src="image/mariana.jpg">
+					     	<div class="name in-line">
 									<h5>Mariana Costa</h5>
 									<h6>El panel de spealers esta buanazo<span class="hora">09:25</span></h6>
 								</div>
 							</div>
-							<div class="lista">
-				        		<img class="img-circle linea" src="image/anamaria.jpg">
-					        	<div class="name in-line">
+							<div class="lista" id="lista_4" >
+				     		<img class="img-circle linea" src="image/anamaria.jpg">
+			        	<div class="name in-line">
 									<h5>Ana Maria Martinez Franklin</h5>
 									<h6>Pues dale chamo!<span class="hora">Ayer</span></h6>
 								</div>
 							</div>
-				        	<div class="lista">
-						        <img class="img-circle linea" src="image/rodulfo.jpg">
-						        <div class="name in-line">
+				      <div class="lista" id="lista_5" >
+					      <img class="img-circle linea" src="image/rodulfo.jpg">
+				        <div class="name in-line">
 									<h5>Rodulfo Prieto</h5>
 									<h6>Como van las chicas?<span class="hora">Martes</span></h6>
 								</div>
 							</div>
-							<div class="lista">
+							<div class="lista" id="lista_6" >
 			 					<img  class="img-circle linea" src="image/andrea.jpg">
 			 					<div class="name in-line">
-			 					    <h5>Andrea Lamas</h5>
-			 					    <h6>Hoy toca clases de canto, yee!<span class="hora">Lunes</span></h6>
+			 				    <h5>Andrea Lamas</h5>
+			 				    <h6>Hoy toca clases de canto, yee!<span class="hora">Lunes</span></h6>
 			 					</div>
 			 				</div>
-			 				<div class="lista">
+			 				<div class="lista" id="lista_7" >
 			 					<img  class="img-circle linea" src="image/mariapaula.jpg">
 			 					<div class="name in-line">
 			 						<h5>Maria Paula Rivarola</h5>
 			 						<h6>Wuju! esto me encanta!! en verdad!<span class="hora">13/01/2016</span></h6>
 			 					</div>
 			 				</div>
-			 				<div class="lista">
+			 				<div class="lista" id="lista_8" >
 			 					<img class="img-circle linea" src="image/katy.jpg">
 			 					<div class="name in-line">
 			 						<h5>Katy Sanchez</h5>
 			 						<h6>No te preocupes, tengo el salon bajo control<span class="hora">11/01/2016</span></h6>
 			 					</div>
 			 				</div>
-			 				<div class="lista">
+			 				<div class="lista" id="lista_9" >
 			 					<img  class="img-circle linea" src="image/aldo.jpg">
 			 					<div class="name in-line">
 			 						<h5>Aldo Alfaro</h5>
 			 						<h6>Vao a comer<span class="hora">03/01/2016</span></h6>
 			 					</div>
 			 				</div>
-			 				<div class="lista">
+			 				<div class="lista" id="lista_10" >
 			 					<img  class="img-circle linea" src="image/jose.jpg">
 			 					<div class="name in-line">
 			 						<h5>Merenganita Del Angel</h5>
 			 						<h6>Saquen los tacos<span class="hora">02/01/2016</span></h6>
 			 					</div>
 			 				</div>
-			 				<div class="lista">
+			 				<div class="lista" id="lista_11" >
 			 					<img class="img-circle linea" src="image/avatar.jpg">
 			 					<div class="name in-line">
 			 						<h5>Alfredo Lopez</h5>
 			 						<h6>Que iremos a comer!<span class="hora">01/01/2015</span></h6>
-			  					</div>
-			  				</div>
-			  			</div>
-			  		</div>
+			 					</div>
+			 				</div>
+		  			</div>
+		  		</div>
 		 			<div class="bloque  izquierdo">
-		  				<div class="cabeza">
-		  				    <img  class="linea" src="image/logocodeacademy.png">
+	  				<div class="cabeza">
+		  		    <img  class="linea" src="image/logocodeacademy.png">
 		 					<div class="name in-line">
-		  						<h5 class="">Laboratoria Perú</h5>
-		  						<h6 class="">Ana Maria, Aldo, Gian, Mariana, Papu, Tú</h6>
-		  					</div>
-		  					<div class="iconos lineal in-line">
-		  						<p class="icon-attachment in-line in-line"></p>
-		  						<p class="lineal icon-dots-three-vertical in-line"></p>
-		  					</div>
-		  					<div class="chat">
-		  						<div class="op-j">
-				  					<div class="mesenger">
-				  						<h6>Ahora si esta decente<span class="hora">11:18</span></h6>
-				  					</div>
-				  					<div class="mesenger">
-				  						<h5 class="andrea">Andrea Lamas</h5>
+		  					<h5 class="">Laboratoria Perú</h5>
+		 						<h6 class="">Ana Maria, Aldo, Gian, Mariana, Papu, Tú</h6>
+		  				</div>
+		  				<div class="iconos lineal in-line">
+		  					<p class="icon-attachment in-line in-line"></p>
+		  					<p class="lineal icon-dots-three-vertical in-line"></p>
+		  				</div>
+		 					<div class="chat" id="divContenedorMensajes_1">
+		 						<div class="op-j" id="mensajes_1">
+				  				<div class="mesenger" >
+				  					<h6>Ahora si esta decente<span class="hora">11:18</span></h6>
+				  				</div>
+				  				<div class="mesenger"  >
+				 						<h5 class="andrea">Andrea Lamas</h5>
 										<h6>¿Porque se lo habra cortado?<span class="hora">11:20</span></h6>
 									</div>
-					                <div class="mesenger">
-					                 	<h5 class="mariana">Mariana Costa</h5>
-					                 	<h6>Ya ya ya, hacia mucho calor que más<span class="hora">11:25</span></h6>
-					                 </div>
-					                 <div class="mesenger">
-					                 	<h5 class="paula">Maria Paula Rivarola</h5>
-					                 	<h6>Nunca!!! Juan Diego es único<span class="hora">11:31</span></h6>
-					                 </div>
-					                 <div class="mesenger">
-					                 	<h6>Anter parecia Mufasa jajajajaja<span class="hora">11:50</span></h6>
-					                 </div>
-					            </div>
-			                </div>
-			                <div class="escribir imput-group">
-								<span class="icon-insert_emoticon"></span>
-  									<input  placeholder=" Escribe tu menssje aqui "type="text" class="form-control line" aria-label="Amount (to the nearest dollar)">
- 								<span class=" icon-mic text-right"></span>
+					        <div class="mesenger" >
+					         	<h5 class="mariana">Mariana Costa</h5>
+				           	<h6>Ya ya ya, hacia mucho calor que más<span class="hora">11:25</span></h6>
+					        </div>
+					        <div class="mesenger" >
+					          <h5 class="paula">Maria Paula Rivarola</h5>
+					         	<h6>Nunca!!! Juan Diego es único<span class="hora">11:31</span></h6>
+					        </div>
+				  		    <div class="mesenger" >
+					         	<h6>Anter parecia Mufasa jajajajaja<span class="hora">11:50</span></h6>
+					        </div>
+					      </div>
 							</div>
-
-					  
-					          
-					       	</div>
-					 	</div>
+							<div class="chat" id="divContenedorMensajes_2" style="display:none">
+		 						<div class="op-j" id="mensajes_2">
+				  				<div class="mesenger" >
+				  					<h6>Hola<span class="hora">11:18</span></h6>
+				  				</div>
+				  				<div class="mesenger"  >
+				 						<h5 class="paula">Maria Paula Rivarola</h5>
+										<h6>¿Como estas?<span class="hora">11:20</span></h6>
+									</div>
+					        <div class="mesenger" >
+					         	<h5 class="aldo">Mariana Costa</h5>
+				           	<h6>Bien y tu?<span class="hora">11:25</span></h6>
+					        </div>
+					        <div class="mesenger" >
+					          <h5 class="mariana">Aldo Alfaro</h5>
+					         	<h6>Cuando saldremos?<span class="hora">11:31</span></h6>
+					        </div>
+				  		    <div class="mesenger" >
+					         	<h6>No lo se jajajajaja<span class="hora">11:50</span></h6>
+					        </div>
+					      </div>
+							</div>
+							<div class="chat" id="divContenedorMensajes_3" style="display:none">
+		 						<div class="op-j" id="mensajes_3">
+				  				<div class="mesenger" >
+				  					<h6>Como te fue en el examen?<span class="hora">11:18</span></h6>
+				  				</div>
+				  				<div class="mesenger"  >
+				 						<h5 class="andrea">Andrea Lamas</h5>
+										<h6>Creo que mal!!!<span class="hora">11:20</span></h6>
+									</div>
+					        <div class="mesenger" >
+					         	<h5 class="mariana">Mariana Costa</h5>
+				           	<h6>No creo que haya pasado!!...<span class="hora">11:25</span></h6>
+					        </div>
+					        <div class="mesenger" >
+					          <h5 class="paula">Maria Paula Rivarola</h5>
+					         	<h6>No entendi nada<span class="hora">11:31</span></h6>
+					        </div>
+				  		    <div class="mesenger" >
+					         	<h6>:( que mal!!!<span class="hora">11:50</span></h6>
+					        </div>
+					      </div>
+							</div>
+							<div class="chat" id="divContenedorMensajes_4" style="display:none">
+		 						<div class="op-j" id="mensajes_4">
+				  				<div class="mesenger" >
+				  					<h6>Ahora si esta decente<span class="hora">11:18</span></h6>
+				  				</div>
+				  				<div class="mesenger"  >
+				 						<h5 class="andrea">Andrea Lamas</h5>
+										<h6>¿Porque se lo habra cortado?<span class="hora">11:20</span></h6>
+									</div>
+					        <div class="mesenger" >
+					         	<h5 class="mariana">Mariana Costa</h5>
+				           	<h6>Ya ya ya, hacia mucho calor que más<span class="hora">11:25</span></h6>
+					        </div>
+					        <div class="mesenger" >
+					          <h5 class="paula">Maria Paula Rivarola</h5>
+					         	<h6>Nunca!!! Juan Diego es único<span class="hora">11:31</span></h6>
+					        </div>
+				  		    <div class="mesenger" >
+					         	<h6>Anter parecia Mufasa jajajajaja<span class="hora">11:50</span></h6>
+					        </div>
+					      </div>
+							</div>
+							<div class="chat" id="divContenedorMensajes_5" style="display:none">
+		 						<div class="op-j" id="mensajes_5">
+				  				<div class="mesenger" >
+				  					<h6>Ahora si esta decente<span class="hora">11:18</span></h6>
+				  				</div>
+				  				<div class="mesenger"  >
+				 						<h5 class="andrea">Andrea Lamas</h5>
+										<h6>¿Porque se lo habra cortado?<span class="hora">11:20</span></h6>
+									</div>
+					        <div class="mesenger" >
+					         	<h5 class="mariana">Mariana Costa</h5>
+				           	<h6>Ya ya ya, hacia mucho calor que más<span class="hora">11:25</span></h6>
+					        </div>
+					        <div class="mesenger" >
+					          <h5 class="paula">Maria Paula Rivarola</h5>
+					         	<h6>Nunca!!! Juan Diego es único<span class="hora">11:31</span></h6>
+					        </div>
+				  		    <div class="mesenger" >
+					         	<h6>Anter parecia Mufasa jajajajaja<span class="hora">11:50</span></h6>
+					        </div>
+					      </div>
+							</div>
+							<div class="chat" id="divContenedorMensajes_6" style="display:none">
+		 						<div class="op-j" id="mensajes_6">
+				  				<div class="mesenger" >
+				  					<h6>Ahora si esta decente<span class="hora">11:18</span></h6>
+				  				</div>
+				  				<div class="mesenger"  >
+				 						<h5 class="andrea">Andrea Lamas</h5>
+										<h6>¿Porque se lo habra cortado?<span class="hora">11:20</span></h6>
+									</div>
+					        <div class="mesenger" >
+					         	<h5 class="mariana">Mariana Costa</h5>
+				           	<h6>Ya ya ya, hacia mucho calor que más<span class="hora">11:25</span></h6>
+					        </div>
+					        <div class="mesenger" >
+					          <h5 class="paula">Maria Paula Rivarola</h5>
+					         	<h6>Nunca!!! Juan Diego es único<span class="hora">11:31</span></h6>
+					        </div>
+				  		    <div class="mesenger" >
+					         	<h6>Anter parecia Mufasa jajajajaja<span class="hora">11:50</span></h6>
+					        </div>
+					      </div>
+							</div>
+							<div class="chat" id="divContenedorMensajes_7" style="display:none">
+		 						<div class="op-j" id="mensajes_7">
+				  				<div class="mesenger" >
+				  					<h6>Ahora si esta decente<span class="hora">11:18</span></h6>
+				  				</div>
+				  				<div class="mesenger"  >
+				 						<h5 class="andrea">Andrea Lamas</h5>
+										<h6>¿Porque se lo habra cortado?<span class="hora">11:20</span></h6>
+									</div>
+					        <div class="mesenger" >
+					         	<h5 class="mariana">Mariana Costa</h5>
+				           	<h6>Ya ya ya, hacia mucho calor que más<span class="hora">11:25</span></h6>
+					        </div>
+					        <div class="mesenger" >
+					          <h5 class="paula">Maria Paula Rivarola</h5>
+					         	<h6>Nunca!!! Juan Diego es único<span class="hora">11:31</span></h6>
+					        </div>
+				  		    <div class="mesenger" >
+					         	<h6>Anter parecia Mufasa jajajajaja<span class="hora">11:50</span></h6>
+					        </div>
+					      </div>
+							</div>
+							<div class="chat" id="divContenedorMensajes_8" style="display:none">
+		 						<div class="op-j" id="mensajes_8">
+				  				<div class="mesenger" >
+				  					<h6>Ahora si esta decente<span class="hora">11:18</span></h6>
+				  				</div>
+				  				<div class="mesenger"  >
+				 						<h5 class="andrea">Andrea Lamas</h5>
+										<h6>¿Porque se lo habra cortado?<span class="hora">11:20</span></h6>
+									</div>
+					        <div class="mesenger" >
+					         	<h5 class="mariana">Mariana Costa</h5>
+				           	<h6>Ya ya ya, hacia mucho calor que más<span class="hora">11:25</span></h6>
+					        </div>
+					        <div class="mesenger" >
+					          <h5 class="paula">Maria Paula Rivarola</h5>
+					         	<h6>Nunca!!! Juan Diego es único<span class="hora">11:31</span></h6>
+					        </div>
+				  		    <div class="mesenger" >
+					         	<h6>Anter parecia Mufasa jajajajaja<span class="hora">11:50</span></h6>
+					        </div>
+					      </div>
+							</div>
+							<div class="chat" id="divContenedorMensajes_9" style="display:none">
+		 						<div class="op-j" id="mensajes_9">
+				  				<div class="mesenger" >
+				  					<h6>Ahora si esta decente<span class="hora">11:18</span></h6>
+				  				</div>
+				  				<div class="mesenger"  >
+				 						<h5 class="andrea">Andrea Lamas</h5>
+										<h6>¿Porque se lo habra cortado?<span class="hora">11:20</span></h6>
+									</div>
+					        <div class="mesenger" >
+					         	<h5 class="mariana">Mariana Costa</h5>
+				           	<h6>Ya ya ya, hacia mucho calor que más<span class="hora">11:25</span></h6>
+					        </div>
+					        <div class="mesenger" >
+					          <h5 class="paula">Maria Paula Rivarola</h5>
+					         	<h6>Nunca!!! Juan Diego es único<span class="hora">11:31</span></h6>
+					        </div>
+				  		    <div class="mesenger" >
+					         	<h6>Anter parecia Mufasa jajajajaja<span class="hora">11:50</span></h6>
+					        </div>
+					      </div>
+							</div>
+							<div class="chat" id="divContenedorMensajes_10" style="display:none">
+		 						<div class="op-j" id="mensajes_10">
+				  				<div class="mesenger" >
+				  					<h6>Ahora si esta decente<span class="hora">11:18</span></h6>
+				  				</div>
+				  				<div class="mesenger"  >
+				 						<h5 class="andrea">Andrea Lamas</h5>
+										<h6>¿Porque se lo habra cortado?<span class="hora">11:20</span></h6>
+									</div>
+					        <div class="mesenger" >
+					         	<h5 class="mariana">Mariana Costa</h5>
+				           	<h6><span class="hora"></span></h6>
+					        </div>
+					        <div class="mesenger" >
+					          <h5 class="paula">Maria Paula Rivarola</h5>
+					         	<h6><span class="hora"></span></h6>
+					        </div>
+				  		    <div class="mesenger" >
+					         	<h6><span class="hora"></span></h6>
+					        </div>
+					      </div>
+							</div>
+							<div class="chat" id="divContenedorMensajes_11" style="display:none">
+		 						<div class="op-j" id="mensajes_11">
+				  				<div class="mesenger" >
+				  					<h6>Que tal la clase?<span class="hora">08:18</span></h6>
+				  				</div>
+				  				<div class="mesenger"  >
+				 						<h5 class="andrea">Andrea Lamas</h5>
+										<h6>Pues no explicaron bien amiga!<span class="hora">08:20</span></h6>
+									</div>
+					        <div class="mesenger" >
+					         	<h5 class="mariana"></h5>
+				           	<h6>Porque?<span class="hora">08:25</span></h6>
+					        </div>
+					        <div class="mesenger" >
+					          <h5 class="paula"></h5>
+					         	<h6>Pues el wey este no sabe que onda....<span class="hora">08:31</span></h6>
+					        </div>
+				  		    <div class="mesenger" >
+					         	<h6>.......<span class="hora">08:50</span></h6>
+					        </div>
+					      </div>
+							</div>
+							<div class="emoji-panel-body" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent">
+								<div class="emoji-Recent" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0">
+									<div class="escribir imput-group">
+										<span class="icon-insert_emoticon"></span>
+										<input  placeholder=" Escribe tu mensaje aqui"type="text" id="txtMensaje" class="form-control line" aria-label="Amount (to the nearest dollar)" onkeypress="txtChat_KeyPress(event);"> <span class=" icon-mic text-right"></span>
+											<span class="emojik emojiordered1404" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$😭"></span>
+											<span class="emojik emojiordered1377" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$😒"></span>
+											<span class="emojik emojiordered1410" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$😳"></span>
+											<span class="emojik emojiordered1408" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$😱"></span>
+											<span class="emojik emojiordered0885" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$👍🏻"></span>
+											<span class="emojik emojiordered1379" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$😔"></span>
+											<span class="emojik emojiordered0078" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$☺"></span>
+											<span class="emojik emojiordered0157" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$✌🏻"></span>
+											<span class="emojik emojiordered0185" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$❣"></span>
+											<span class="emojik emojiordered1383" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$😘"></span>
+											<span class="emojik emojiordered1426" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$🙃"></span>
+											<span class="emojik emojiordered1375" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$😐"></span>
+											<span class="emojik emojiordered0625" data-reactid=".0.0:$main.5.2.1.$=1$compose-emoji-panel.1.$=1$emoji-Recent.0.$🎉"></span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
+					<input type="hidden" id="idControl" value="lista_1">
 				</div>
 			</body>
-	</html>
+		</html>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+  <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+	<script src="js/funcionesChat.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
 	</script>
-   <script src="js/scrolling-nav.js"></script>
 
 

@@ -4,9 +4,11 @@
    background: #009688;
    height: 150px;
      }
+
  body{
   background: #ddd;
  }
+
  .cajaa{
    border: solid 1px #bbb;
    position: absolute;
@@ -16,11 +18,13 @@
    height: 600px;
    background: #fff;
  }
+
  .columna{
    width: 40%;
    height: 100%;
   border-right: solid 1px #bbb;
  }
+
  .bloque{
   width: 60%;
    height: 100%;
@@ -30,73 +34,161 @@
   float: right;
   margin-bottom: 500px;
  }
+
  .izquierdo{
  float: right;
  }
+
 .inicio{
    background:#eee;
   width: 100%;
   height: 50px;
    border-bottom: solid 1px #bbb;
  }
+
+ .subheader-search {
+    height: 49px;
+    -webkit-transition: box-shadow .18s ease-out;
+    transition: box-shadow .18s ease-out;
+    -webkit-transition-delay: .12s;
+    transition-delay: .12s;
+    padding: 0;
+}
+
+.pane-subheader {
+    height: 49px;
+    z-index: 100;
+}
+
+.pane-header, .pane-subheader {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+}
+
+.subheader-search .icons, .subheader-search .icon-spinner {
+    position: absolute;
+    z-index: 100;
+
+}
+
+.icon-search-morph .icon-back-blue {
+    opacity: 0;
+    -webkit-transform: scale(.8) rotate(225deg);
+    transform: scale(.8) rotate(225deg);
+    -webkit-transition: all .3s cubic-bezier(.4,0,.2,1);
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+    pointer-events: none;
+}
+
+.icon-search-morph .icon {
+    top: 0;
+    left: 0;
+}
+
+.subheader-search .icon, .subheader-search .icon-spinner {
+    position: absolute;
+    z-index: 100;
+}
+
+
  .in-line{
    display: inline-block;
  }
+
  .line{
     width: 80% !important;
     display: inline !important;
  }
+
  .buscar{
    width: 100%;
    height: 50px;
   border-bottom: solid 1px #bbb;
   padding: 7px;
  }
+
  .chat{
    background:url(../image/chat-panel-bg.png);
    width: 100%;
    height:500px;
     border-bottom: solid 1px #bbb;
    }
+
  .contactos{
     overflow-y: scroll;
    width: 100%;
    height:500px;
  }
+
  .circulo{
   margin-top: -10px; 
   border-radius: 100%;
   width: 40px;
   height:40px;
  }
+
 .linea{
   border-radius: 100%;
   width:35px;
   height: 35px;
   margin:8px;
  }
+
  .lista{
    height: 75px;
    padding: 10px;
    border-bottom: solid 1px #bbb;
    width: 100%
  }
+.text-mio{
+  background-color: #DCF8C6;
+  text-align: right;
+  margin-left: 60%;
+}
+
+.emoji-panel-body {
+    height: 184px;
+    position: absolute;
+    opacity: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 8px 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.emoji-panel-body>* {
+    direction: ltr;
+    margin: 0 12px;
+}
+.k .emojiordered1404 {
+    background-position: -1295px -1190px;
+}
  .name{
    margin: -8px 5px;
    width: 80%;
  }
+
  .iconos{
   float: right;
    margin-top: 15px;
    display: inline;
  }
+
  .escribir{
    background: #ddd;
    padding: 10px;
  }
+
  #mensaje{
    width: 90%;
  }
+
 .mesenger{
    width: 300px;
    height: auto;
@@ -106,6 +198,7 @@
    margin: 3px;
    position: relative;
  }
+
  .mensaje-e{
    width: auto;
    height: auto;
@@ -116,6 +209,7 @@
    margin-left: 280px;
    position: relative;
  }
+
  .op-j{
   width: 100%;
    height: 500px;
@@ -124,19 +218,24 @@
    padding-top: 70px;
    overflow-y: scroll;
  }
+
 .hora{
    float: right;
    margin-top: 10px;
  }
+
  .andrea{
   color: #1ad1ff;
  }
+
  .mariana{
    color: #ff1a8c;
  }
+
  .paula{
    color: #33ffad;
  }
+
  .aldo{
    color: #ffcc00;
 }
